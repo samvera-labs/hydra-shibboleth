@@ -1,4 +1,5 @@
-require "hydra/shibboleth/version"
+require 'hydra/shibboleth/version'
+require 'rails'
 
 module Hydra
   module Shibboleth
