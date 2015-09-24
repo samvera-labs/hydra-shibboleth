@@ -25,4 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec'
   spec.add_development_dependency "engine_cart", "~> 0.7"
   spec.add_development_dependency "rubocop", "~> 0.7"
+  s.add_dependency 'omniauth', '~> 1.2.2'
+  s.add_dependency 'omniauth-shibboleth', '~> 1.2.0'
+  s.add_dependency 'net-ldap', '~> 0.11'
 end
