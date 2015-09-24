@@ -36,3 +36,5 @@ Gemfile.lock
 
 # ignore generated test app
 /spec/internal
+
+.DS_Store
