@@ -1,0 +1,19 @@
+defaults: &defaults
+  host: <%= Rails.application.secrets[:ldap_host] %>
+  port: <%= Rails.application.secrets[:ldap_port] %>
+  username: <%= Rails.application.secrets[:ldap_username] %>
+  password:  <%= Rails.application.secrets[:ldap_password] %>
+  base: <%= Rails.application.secrets[:ldap_base] %>
+  group_base: <%= Rails.application.secrets[:ldap_group_base] %>
+  
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
